@@ -11,7 +11,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 export class ProductFormComponent {
   categories$;
-  product = {};
+  product: any = {};
   productId;
 
   constructor(

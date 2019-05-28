@@ -10,8 +10,8 @@ import { Product } from '../models/product';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-  products: Product[] = [];
-  filteredProducts: Product[] = [];
+  products: any = [];
+  filteredProducts: any = [];
   categories$;
   category: string;
 
@@ -32,4 +32,9 @@ export class ProductsComponent {
 
     this.categories$ = categoryService.getCategories();
   }
+
+  addToCart() {
+    alert("Item added to cart.")
+  }
+
 }
